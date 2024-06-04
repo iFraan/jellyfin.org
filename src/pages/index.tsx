@@ -8,18 +8,11 @@ import CallToAction from '../components/home/CallToAction';
 import FreedomSection from '../components/home/FreedomSection';
 import Hero from '../components/common/Hero';
 import InActionSection from '../components/home/InActionSection';
-import Logo from '@theme/Logo';
 
 import styles from './index.module.scss';
 import LogoWhiteNoText from '../../static/images/logo-white-notext.svg';
 import ArrowDownIcon from '../../static/images/icons/arrow-down.svg';
 import HomeLayout from '../components/layout/HomeLayout';
-
-const links = [
-  { href: '/blog', name: 'Blog' },
-  { href: '/docs', name: 'Documentation' },
-  { href: '/', name: 'Community' }
-];
 
 export default function Home() {
   return (
@@ -31,7 +24,7 @@ export default function Home() {
         <div className={styles['hero-content-wrap']}>
           <div className={styles['hero-content']}>
             <LogoWhiteNoText style={{ width: '6em', height: '6em' }} />
-            <div style={{ textAlign: 'center', fontWeight: 700, fontSize: '3.5em' }}>Your own media universe.</div>
+            <div style={{ textAlign: 'center', fontWeight: 700, fontSize: '3.5em', lineHeight: 1.1 }}>Your own media universe.</div>
             <button
               style={{
                 backgroundColor: 'purple',
@@ -55,7 +48,7 @@ export default function Home() {
           </div>
         </div>
       </HomeLayout>
-      {/* <Hero title='The Free Software Media System' large>
+      <Hero title='The Free Software Media System' large>
         <p className='hero__text margin-vert--lg'>
           Jellyfin is the volunteer-built media solution that puts <em>you</em> in control of your media. Stream to any
           device from your own server, with no strings attached. Your media, your server, your way.
@@ -75,7 +68,7 @@ export default function Home() {
         <InActionSection />
         <FreedomSection />
         <CallToAction />
-      </main> */}
+      </main>
     </Layout>
   );
 }
