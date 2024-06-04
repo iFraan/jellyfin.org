@@ -1,0 +1,37 @@
+.navbar-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: --ifm-background-color;
+  font-family: --ifm-font-family-base;
+}
+
+.navbar-logo {
+  width: 7em;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  font-size: 1em;
+}
+
+.navbar-button-transparent {
+  background-color: transparent;
+  padding: 0.2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: 0;
+  border-radius: 2em;
+}
+
+.navbar-button-color {
+  background-color: purple;
+  padding: 0.2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: 0;
+  border-radius: 2em;
+}
