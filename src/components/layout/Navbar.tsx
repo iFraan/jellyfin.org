@@ -11,9 +11,9 @@ const links = [
 export default function Navbar() {
     return (
         <div className={styles['navbar-wrap']}>
-            <div className={styles['navbar-logo']}>
+            <Link to="/" className={styles['navbar-logo']}>
                 <Logo />
-            </div>
+            </Link>
             <div className={styles['navbar-links']}>
                 {links.map((link) => (
                     <Link to={link.href} style={{ color: 'white' }}>
