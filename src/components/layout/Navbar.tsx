@@ -1,3 +1,4 @@
+import Link from '@docusaurus/Link';
 import Logo from '@theme/Logo';
 import styles from './Navbar.module.scss';
 
@@ -15,9 +16,9 @@ export default function Navbar() {
             </div>
             <div className={styles['navbar-links']}>
                 {links.map((link) => (
-                    <a href={link.href} style={{ color: 'white' }}>
+                    <Link href={link.href} style={{ color: 'white' }}>
                         {link.name}
-                    </a>
+                    </Link>
                 ))}
             </div>
             <div style={{ display: 'flex' }}>
