@@ -11,6 +11,8 @@ import InActionSection from '../components/home/InActionSection';
 import Logo from '@theme/Logo';
 
 import styles from './index.module.scss';
+import LogoWhiteNoText from '../../static/images/logo-white-notext.svg';
+import ArrowDownIcon from '../../static/images/icons/arrow-down.svg';
 
 const links = [
   { href: '/blog', name: 'Blog' },
@@ -80,7 +82,30 @@ export default function Home() {
       </div>
       {/* content */}
       <div className={styles['hero-content-wrap']}>
-        <div className={styles['hero-content']}>CONTENT</div>
+        <div className={styles['hero-content']}>
+          <LogoWhiteNoText style={{ width: '6em', height: '6em' }} />
+          <div style={{ textAlign: 'center', fontWeight: 700, fontSize: '3.5em' }}>Your own media universe.</div>
+          <button
+            style={{
+              backgroundColor: 'purple',
+              padding: '0.5em',
+              paddingLeft: '1.5em',
+              paddingRight: '1.5em',
+              borderRadius: '2em',
+              border: 0,
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.5em'
+            }}
+          >
+            <ArrowDownIcon />
+            <div style={{ fontFamily: 'Figtree', fontWeight: 600, fontSize: '1.1em' }}>Install Jellyfin</div>
+          </button>
+        </div>
+        <div className={styles['features-content']}>
+          <div style={{ textAlign: 'center', fontWeight: 700, fontSize: '1.5em' }}>Jellyfin is...</div>
+          <div style={{ height: '10vh' }}>Jellyfin is...</div>
+        </div>
       </div>
       <Hero title='The Free Software Media System' large>
         <p className='hero__text margin-vert--lg'>

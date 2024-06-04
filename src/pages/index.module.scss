@@ -1,7 +1,7 @@
 .hero-content-wrap {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .hero-content-wrap:before {
@@ -22,4 +22,19 @@
 
 .hero-content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  height: 75vh;
+}
+
+.features-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5em;
 }
