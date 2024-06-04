@@ -16,18 +16,18 @@ export default function Navbar() {
             </div>
             <div className={styles['navbar-links']}>
                 {links.map((link) => (
-                    <Link href={link.href} style={{ color: 'white' }}>
+                    <Link to={link.href} style={{ color: 'white' }}>
                         {link.name}
                     </Link>
                 ))}
             </div>
             <div style={{ display: 'flex' }}>
-                <button className={styles['navbar-button-transparent']}>
+                <Link href='https://demo.jellyfin.org/stable' className={styles['navbar-button-transparent']}>
                     Try demo
-                </button>
-                <button className={styles['navbar-button-color']}>
+                </Link>
+                <Link to='/downloads/server' className={styles['navbar-button-color']}>
                     Install
-                </button>
+                </Link>
             </div>
         </div>
     )
