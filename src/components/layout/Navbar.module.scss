@@ -18,6 +18,13 @@
   font-size: 1em;
 }
 
+// hide links on mobile
+@media (max-width: 996px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
 .navbar-button-transparent {
   background-color: transparent;
   padding-top: 6px;
@@ -26,6 +33,7 @@
   padding-right: 1.5em;
   border: 0;
   border-radius: 2em;
+  min-width: fit-content;
 }
 
 .navbar-button-color {
@@ -37,4 +45,5 @@
   border: 0;
   border-radius: 2em;
   font-weight: 600;
+  min-width: fit-content;
 }
