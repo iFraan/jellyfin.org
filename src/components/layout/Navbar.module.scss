@@ -33,7 +33,7 @@
   padding-right: 1.5em;
   border: 0;
   border-radius: 2em;
-  color: white;
+  color: var(--ifm-font-color-base);
   min-width: fit-content;
 }
 
@@ -45,7 +45,7 @@
   padding-right: 1.5em;
   border: 0;
   border-radius: 2em;
-  color: white;
+  color: var(--ifm-font-color-base);
   font-weight: 600;
   min-width: fit-content;
 }
