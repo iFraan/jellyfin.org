@@ -5,6 +5,8 @@
  * work well for content-centric websites.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&display=swap');
+
 html {
   -moz-font-feature-settings: 'liga' on;
   font-feature-settings: 'liga';
@@ -12,7 +14,7 @@ html {
 
 :root {
   /* base font */
-  --ifm-font-family-base: 'Noto Sans', sans-serif;
+  --ifm-font-family-base: 'Figtree', sans-serif;
   --ifm-line-height-base: 1.7;
   --ifm-font-color-base: #ffffff;
   /* headings */
@@ -26,7 +28,8 @@ html {
   --ifm-color-primary-light: #008dbd;
   --ifm-color-primary-lighter: #009ed4;
   --ifm-color-primary-lightest: #00afeb;
-  --ifm-background-color: #000b25 !important;
+  // --ifm-background-color: #000b25 !important;
+  --ifm-background-color: #000012 !important;
   /* buttons */
   --ifm-button-color: #ffffff;
   --ifm-button-border-radius: 30px;
